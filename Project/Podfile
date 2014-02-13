@@ -1,0 +1,7 @@
+pod "GoogleDocsBackend", :path => "../GoogleDocsBackend.podspec"
+
+target "Demo" do
+end
+
+target "DemoTests" do
+end
