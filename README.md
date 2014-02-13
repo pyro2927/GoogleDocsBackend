@@ -1,6 +1,6 @@
 # GoogleDocsBackend
 
-Use a Google Docs Spreadsheet in a style similar to Parse.  You can setup a spreadsheet with all of the data you want, and pull that into your mobile application.  An example spreadsheet can be seen [here](https://docs.google.com/spreadsheet/ccc?key=0Atoge9gLkMCTdENkUkVENElFczlmTDl1ODZWaTJmeFE&usp=sharing).
+Use a Google Docs Spreadsheet in a style similar to Parse.  You can setup a spreadsheet with all of the data you want, and pull that into your mobile application.  An example spreadsheet can be seen [here](https://docs.google.com/spreadsheet/ccc?key=0Atoge9gLkMCTdENkUkVENElFczlmTDl1ODZWaTJmeFE&usp=sharing).  The concept originated during the development on an app for [Amp Music](http://amp-music.com/).
 
 ![Screenshot](./img/doc_and_app.png)
 
