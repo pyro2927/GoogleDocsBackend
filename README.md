@@ -53,6 +53,7 @@ it simply add the following line to your Podfile:
 - [ ] Enable writing of data
 - [ ] Handle BOOLs and NSDates more cleanly
 - [ ] Allow accessing of non-attributed values
+- [ ] Publish to CocoaPods
 
 ## Author
 
