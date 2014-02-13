@@ -10,6 +10,7 @@ Use a Google Docs Spreadsheet in a style similar to Parse.  You can setup a spre
 ## Setup
 
 To allow a Google Spreadsheet to be accessed via this library (and API calls), you must Publish it. *Note: Publishing and simply setting as public are two seperate things. See screenshots below*
+The first row of cells acts as the keys for the objects fetched from the server, and each row after that is one object.  Values for objects are paired with the keys in row 1.  As such it is highly recommended that you [name and protect](https://support.google.com/drive/answer/63175?hl=en) row 1.
 
 ![Publish](./img/publish.png)
 
