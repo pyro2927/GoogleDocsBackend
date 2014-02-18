@@ -20,6 +20,10 @@
     return googleDocsDateFormatter;
 }
 
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{};
+}
+
 + (NSValueTransformer *)googleDocsDateJSONTransformer {
     return [MTLValueTransformer reversibleTransformerWithForwardBlock:^(NSString *str) {
         return [self.googleDocsDateFormatter dateFromString:str];
