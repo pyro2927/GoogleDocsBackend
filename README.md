@@ -47,13 +47,13 @@ it simply add the following line to your Podfile:
 
 ## TODOs
 
-- [x] Handle gaps in cells better
-- [x] Parse header keys via NSRegularExpressions
-- [ ] Clean up documentation
-- [ ] Enable writing of data
-- [ ] Handle BOOLs and NSDates more cleanly
-- [ ] Allow accessing of non-attributed values
-- [ ] Publish to CocoaPods
+* ~~Handle gaps in cells better~~
+* ~~Parse header keys via nsregularexpressions~~
+* Clean up documentation
+* Enable writing of data
+* Handle BOOLs and NSDates more cleanly
+* Allow accessing of non-attributed values
+* Publish to CocoaPods
 
 ## Author
 
