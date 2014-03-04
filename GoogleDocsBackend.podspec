@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "GoogleDocsBackend"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Use a Google Docs spreadsheet as a read-only backend"
   s.description      = <<-DESC
                        Use a Google Docs spreadsheet as a read-only backend to your app!
