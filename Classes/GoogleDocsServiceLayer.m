@@ -41,7 +41,7 @@
             [entries removeObjectsInRange:NSMakeRange(0, [keys count])];
             
             //iterate and create shows
-            NSMutableDictionary *nextObject = nil;
+            NSMutableDictionary *nextObject = [NSMutableDictionary dictionary];
             //headers are row 1, first object is row 2
             int nextRow = 2;
             for (NSDictionary *entry in entries) {
