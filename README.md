@@ -53,11 +53,11 @@ it simply add the following line to your Podfile:
 
 * ~~Handle gaps in cells better~~
 * ~~Parse header keys via nsregularexpressions~~
+* ~~Publish to CocoaPods~~
 * Clean up documentation
 * Enable writing of data
 * Handle BOOLs and NSDates more cleanly
 * Allow accessing of non-attributed values
-* Publish to CocoaPods
 
 ## Author
 
