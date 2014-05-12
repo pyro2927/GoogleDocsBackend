@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GDBSheet.h"
 
 @interface GDBExampleViewController : UITableViewController
+
+- (id)initWithSheet:(GDBSheet*)gdbSheet;
 
 @end

@@ -39,4 +39,12 @@
     }];
 }
 
+- (void)sheetsForSpreadsheetKey:(NSString*)key withCompletionBlock:(GoogleDocsAPICompletionBlock)completionBlock{
+    [self GET:[NSString stringWithFormat:@"feeds/worksheets/%@/public/basic?alt=json", key] parameters:@{} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        completionBlock(YES, responseObject, nil);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        completionBlock(NO, nil, error);
+    }];
+}
+
 @end

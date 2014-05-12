@@ -13,17 +13,19 @@
 
 @interface GDBExampleViewController (){
     NSArray *googleDocObjects;
+    GDBSheet *sheet;
 }
 
 @end
 
 @implementation GDBExampleViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithSheet:(GDBSheet*)gdbSheet
 {
-    self = [super initWithStyle:style];
+    self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
         // Custom initialization
+        sheet = gdbSheet;
     }
     return self;
 }
@@ -31,9 +33,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = sheet.name;
     [self.tableView registerClass:[GDBExampleCell class] forCellReuseIdentifier:@"Cell"];
     //request all objects from worksheet with key 0Atoge9gLkMCTdENkUkVENElFczlmTDl1ODZWaTJmeFE
-    [GoogleDocsServiceLayer objectsForWorksheetKey:@"0Atoge9gLkMCTdENkUkVENElFczlmTDl1ODZWaTJmeFE" sheetId:@"od6" modelClass:[GDBExampleShowModel class] callback:^(NSArray *objects, NSError *error) {
+    [GoogleDocsServiceLayer objectsForWorksheetKey:sheet.worksheetId sheetId:sheet.sheetId modelClass:[GDBExampleShowModel class] callback:^(NSArray *objects, NSError *error) {
         if (error) {
             [[[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
         } else {

@@ -9,8 +9,25 @@
 #import "GoogleDocsServiceLayer.h"
 #import "GoogleDocsSpreadsheetAPIClient.h"
 #import "GDBModel.h"
+#import "GDBSheet.h"
 
 @implementation GoogleDocsServiceLayer
+
++ (void)sheetsForWorksheetKey:(NSString*)key callback:(GoogleDocsServiceLayerCompletionBlock)callback{
+    [[GoogleDocsSpreadsheetAPIClient sharedClient] sheetsForSpreadsheetKey:key withCompletionBlock:^(BOOL success, NSDictionary *result, NSError *error) {
+        if (success) {
+            NSMutableArray *objects = [NSMutableArray array];
+            NSArray *entries = result[@"feed"][@"entry"];
+            for (NSDictionary *entry in entries) {
+                [objects addObject:[MTLJSONAdapter modelOfClass:[GDBSheet class] fromJSONDictionary:entry error:nil]];
+            }
+            callback(objects, error);
+        } else {
+            callback(nil, error);
+        }
+    }];
+    
+}
 
 + (void)objectsForWorksheetKey:(NSString*)key sheetId:(NSString*)gid callback:(GoogleDocsServiceLayerCompletionBlock)callback{
     [[self class] objectsForWorksheetKey:key sheetId:gid modelClass:[GDBModel class] callback:callback];

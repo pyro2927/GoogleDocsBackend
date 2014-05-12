@@ -12,6 +12,7 @@ typedef void (^GoogleDocsServiceLayerCompletionBlock)(NSArray *objects, NSError 
 
 @interface GoogleDocsServiceLayer : NSObject
 
++ (void)sheetsForWorksheetKey:(NSString*)key callback:(GoogleDocsServiceLayerCompletionBlock)callback;
 + (void)objectsForWorksheetKey:(NSString*)key sheetId:(NSString*)gid callback:(GoogleDocsServiceLayerCompletionBlock)callback;
 + (void)objectsForWorksheetKey:(NSString*)key sheetId:(NSString*)gid modelClass:(Class)modelClass callback:(GoogleDocsServiceLayerCompletionBlock)callback;
 

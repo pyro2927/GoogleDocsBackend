@@ -14,5 +14,6 @@ typedef void (^GoogleDocsAPICompletionBlock)(BOOL success, NSDictionary *result,
 
 + (GoogleDocsSpreadsheetAPIClient*)sharedClient;
 - (void)cellsForSpreadsheetKey:(NSString*)key sheetId:(NSString*)gid withCompletionBlock:(GoogleDocsAPICompletionBlock)completionBlock;
+- (void)sheetsForSpreadsheetKey:(NSString*)key withCompletionBlock:(GoogleDocsAPICompletionBlock)completionBlock;
 
 @end

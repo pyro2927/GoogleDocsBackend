@@ -22,6 +22,7 @@
 		D8327EC818AD1C6700EE1F3D /* GDBExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8327EC718AD1C6700EE1F3D /* GDBExampleViewController.m */; };
 		D8327ECB18AD1CD500EE1F3D /* GDBExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8327ECA18AD1CD500EE1F3D /* GDBExampleCell.m */; };
 		D8327ECE18AD1E1200EE1F3D /* GDBExampleShowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8327ECD18AD1E1200EE1F3D /* GDBExampleShowModel.m */; };
+		D85E93F11921694C00821C4E /* GDBExampleWorksheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85E93F01921694C00821C4E /* GDBExampleWorksheetViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		D8327ECA18AD1CD500EE1F3D /* GDBExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBExampleCell.m; sourceTree = "<group>"; };
 		D8327ECC18AD1E1200EE1F3D /* GDBExampleShowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBExampleShowModel.h; sourceTree = "<group>"; };
 		D8327ECD18AD1E1200EE1F3D /* GDBExampleShowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBExampleShowModel.m; sourceTree = "<group>"; };
+		D85E93EF1921694C00821C4E /* GDBExampleWorksheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBExampleWorksheetViewController.h; sourceTree = "<group>"; };
+		D85E93F01921694C00821C4E /* GDBExampleWorksheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBExampleWorksheetViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				D8327E9F18AD18CB00EE1F3D /* Main.storyboard */,
 				D8327EC618AD1C6700EE1F3D /* GDBExampleViewController.h */,
 				D8327EC718AD1C6700EE1F3D /* GDBExampleViewController.m */,
+				D85E93EF1921694C00821C4E /* GDBExampleWorksheetViewController.h */,
+				D85E93F01921694C00821C4E /* GDBExampleWorksheetViewController.m */,
 				D8327EC918AD1CD500EE1F3D /* GDBExampleCell.h */,
 				D8327ECA18AD1CD500EE1F3D /* GDBExampleCell.m */,
 				D8327ECC18AD1E1200EE1F3D /* GDBExampleShowModel.h */,
@@ -281,6 +286,7 @@
 				D8327E9E18AD18CB00EE1F3D /* GDBAppDelegate.m in Sources */,
 				D8327EC818AD1C6700EE1F3D /* GDBExampleViewController.m in Sources */,
 				D8327E9A18AD18CB00EE1F3D /* main.m in Sources */,
+				D85E93F11921694C00821C4E /* GDBExampleWorksheetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
