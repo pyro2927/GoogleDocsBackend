@@ -18,7 +18,11 @@ The first row of cells acts as the keys for the objects fetched from the server,
 
 In order to convert these into native NSObects, you need to subclass `GDBModel`, which makes use of [Mantle](https://github.com/MantleFramework/Mantle).  The important part is to implement `+ (NSDictionary *)JSONKeyPathsByPropertyKey` in order to map the column headers to native attributes.  See `GDBExampleShowModel` for a demonstration on how to do this.
 
-Once you have that done, you can call `[GoogleDocsServiceLayer objectsForWorksheetKey: sheetId: modelClass: callback:]` in order to fetch the information from that spreadsheet and convert them into local native objects.  See `GDBExampleViewController`'s `viewDidLoad` for an example.  *Note: Google Docs appears to 1-index their spreadsheets instead of 0-index, so the first sheet in a worksheet would be index `1`*
+Once you have that done, you can call `[GoogleDocsServiceLayer objectsForWorksheetKey: sheetId: modelClass: callback:]` in order to fetch the information from that spreadsheet and convert them into local native objects.  See `GDBExampleViewController`'s `viewDidLoad` for an example.
+
+To find the correct sheetId, you can view view the worksheet info at <https://spreadsheets.google.com/feeds/worksheets/0Atoge9gLkMCTdENkUkVENElFczlmTDl1ODZWaTJmeFE/public/basic?alt=json>.
+
+![](./img/worksheet_json.png)
 
 ## Shortcomings
 

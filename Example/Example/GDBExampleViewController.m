@@ -33,7 +33,7 @@
     [super viewDidLoad];
     [self.tableView registerClass:[GDBExampleCell class] forCellReuseIdentifier:@"Cell"];
     //request all objects from worksheet with key 0Atoge9gLkMCTdENkUkVENElFczlmTDl1ODZWaTJmeFE
-    [GoogleDocsServiceLayer objectsForWorksheetKey:@"0Atoge9gLkMCTdENkUkVENElFczlmTDl1ODZWaTJmeFE" sheetId:@"1" modelClass:[GDBExampleShowModel class] callback:^(NSArray *objects, NSError *error) {
+    [GoogleDocsServiceLayer objectsForWorksheetKey:@"0Atoge9gLkMCTdENkUkVENElFczlmTDl1ODZWaTJmeFE" sheetId:@"od6" modelClass:[GDBExampleShowModel class] callback:^(NSArray *objects, NSError *error) {
         if (error) {
             [[[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
         } else {
